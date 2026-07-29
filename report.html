@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Engineering Report Generator - The SR Homes</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>The SR Homes</h1>
+
+<p>
+Construction Engineering Report Generator
+</p>
+
+</header>
+
+
+
+<section class="card">
+
+
+<h2>Create Report</h2>
+
+
+<label>Project Name</label>
+
+<input id="project" type="text" placeholder="Example: Residential Building">
+
+
+<label>Client Name</label>
+
+<input id="client" type="text" placeholder="Client Name">
+
+
+<label>Engineer Name</label>
+
+<input id="engineer" type="text" placeholder="Engineer Name">
+
+
+<label>Report Details</label>
+
+<textarea id="details" 
+style="width:100%;height:120px;"
+placeholder="Enter calculation summary"></textarea>
+
+
+<button onclick="generateReport()">
+
+Generate Report
+
+</button>
+
+
+<div id="result"></div>
+
+
+</section>
+
+
+
+<script src="report.js"></script>
+
+
+</body>
+
+</html>
