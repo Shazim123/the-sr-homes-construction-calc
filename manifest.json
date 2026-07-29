@@ -1,0 +1,16 @@
+{
+  "name": "The SR Homes Pro",
+  "short_name": "SR Homes",
+  "description": "Structural Engineering & Construction Solutions",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e3c72",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
