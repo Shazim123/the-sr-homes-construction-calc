@@ -21,7 +21,36 @@ Structural Engineering & Quantity Tools
 </p>
 
 </header>
+<section class="stats">
 
+<div class="stat-card">
+<h2>🏗️</h2>
+<p>Projects</p>
+<span id="projectCount">0</span>
+</div>
+
+
+<div class="stat-card">
+<h2>👥</h2>
+<p>Clients</p>
+<span id="clientCount">0</span>
+</div>
+
+
+<div class="stat-card">
+<h2>📄</h2>
+<p>Reports</p>
+<span id="reportCount">0</span>
+</div>
+
+
+<div class="stat-card">
+<h2>💰</h2>
+<p>BOQ Value</p>
+<span id="totalValue">₹0</span>
+</div>
+
+</section>
 
 <section class="card">
 
@@ -160,7 +189,41 @@ Construction Engineering Calculator
 
 </footer>
 
+<script>
 
+let projects =
+JSON.parse(localStorage.getItem("projects")) || [];
+
+let clients =
+JSON.parse(localStorage.getItem("clients")) || [];
+
+
+document.getElementById("projectCount").innerHTML =
+projects.length;
+
+
+document.getElementById("clientCount").innerHTML =
+clients.length;
+
+
+document.getElementById("reportCount").innerHTML =
+localStorage.getItem("reports") || 0;
+
+
+let total = 0;
+
+projects.forEach(function(p){
+
+total += Number(p.cost || 0);
+
+});
+
+
+document.getElementById("totalValue").innerHTML =
+"₹" + total.toLocaleString("en-IN");
+
+
+</script>
 </body>
 
 </html>
