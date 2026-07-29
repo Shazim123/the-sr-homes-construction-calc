@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Material Cost Estimator - The SR Homes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>The SR Homes</h1>
+    <p>Material Cost Estimator</p>
+</header>
+
+<section class="card">
+
+<h2>Construction Cost Calculator</h2>
+
+<label>Cement Bags</label>
+<input id="cement" type="number">
+
+<label>Cement Rate (₹/bag)</label>
+<input id="cementRate" type="number">
+
+<label>Steel Quantity (kg)</label>
+<input id="steel" type="number">
+
+<label>Steel Rate (₹/kg)</label>
+<input id="steelRate" type="number">
+
+<label>Sand Quantity (m³)</label>
+<input id="sand" type="number">
+
+<label>Sand Rate (₹/m³)</label>
+<input id="sandRate" type="number">
+
+<label>Aggregate Quantity (m³)</label>
+<input id="aggregate" type="number">
+
+<label>Aggregate Rate (₹/m³)</label>
+<input id="aggregateRate" type="number">
+
+<label>Labour Cost (₹)</label>
+<input id="labour" type="number">
+
+
+<button onclick="calculateCost()">
+Calculate Total Cost
+</button>
+
+<div id="result"></div>
+
+</section>
+
+<script src="cost.js"></script>
+
+</body>
+</html>
