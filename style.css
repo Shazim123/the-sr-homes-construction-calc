@@ -1,53 +1,151 @@
-body{
+body {
     font-family: Arial, sans-serif;
-    background:#f4f4f4;
-    margin:0;
+    background: #f2f4f7;
+    margin: 0;
+    color: #222;
 }
 
-header{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:20px;
+header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
 }
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+
+.card {
+
+    background: white;
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 25px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+
+}
+
+
+.card h2 {
+
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+
+button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin: 8px 0;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #111;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background: #333;
+
+}
+
+
+a {
+
+    text-decoration: none;
+
+}
+
+
+input, select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 6px;
+
+    margin-bottom: 12px;
+
+    border-radius: 8px;
+
+    border: 1px solid #ccc;
+
+    box-sizing: border-box;
+
+}
+
+
+label {
+
+    font-weight: bold;
+
+}
+
+
+#result {
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #f1f1f1;
+
+    border-radius: 10px;
+
+}
+
+
+footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    color: #555;
+
+}
+
+
+@media(max-width:600px){
 
 .card{
-    background:white;
-    max-width:450px;
-    margin:30px auto;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 0 15px #ccc;
+
+    margin:15px;
+
+    padding:20px;
+
 }
 
-h2{
-    text-align:center;
+header h1{
+
+    font-size:26px;
+
 }
 
-label{
-    display:block;
-    margin-top:12px;
-}
-
-input,select{
-    width:100%;
-    padding:10px;
-    margin-top:5px;
-}
-
-button{
-    width:100%;
-    margin-top:20px;
-    padding:12px;
-    background:#111;
-    color:white;
-    border:none;
-    cursor:pointer;
-}
-
-#result{
-    margin-top:20px;
-    padding:15px;
-    background:#eee;
-    border-radius:10px;
 }
