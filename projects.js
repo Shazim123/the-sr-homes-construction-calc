@@ -1,23 +1,26 @@
 let projects = JSON.parse(localStorage.getItem("projects")) || [];
 
+displayProjects(projects);
+
+
+function displayProjects(data){
 
 let list = document.getElementById("projectList");
 
 
-if(projects.length === 0){
+if(data.length === 0){
 
 list.innerHTML = "<p>No saved projects yet.</p>";
 
-}
+return;
 
-else{
+}
 
 
 list.innerHTML = "";
 
 
-projects.forEach(function(project,index){
-
+data.forEach(function(project,index){
 
 list.innerHTML += `
 
@@ -43,11 +46,69 @@ Total Cost:
 </p>
 
 
+<button onclick="deleteProject(${index})">
+Delete
+</button>
+
+
 </div>
 
 `;
 
 });
 
+}
+
+
+
+function searchProjects(){
+
+let search =
+document.getElementById("searchProject").value.toLowerCase();
+
+
+let filtered = projects.filter(function(project){
+
+return (
+project.name.toLowerCase().includes(search) ||
+project.client.toLowerCase().includes(search)
+);
+
+});
+
+
+displayProjects(filtered);
+
+}
+
+
+
+function deleteProject(index){
+
+projects.splice(index,1);
+
+localStorage.setItem(
+"projects",
+JSON.stringify(projects)
+);
+
+
+displayProjects(projects);
+
+}
+
+
+
+function clearProjects(){
+
+if(confirm("Delete all saved projects?")){
+
+localStorage.removeItem("projects");
+
+projects=[];
+
+displayProjects(projects);
+
+}
 
 }
