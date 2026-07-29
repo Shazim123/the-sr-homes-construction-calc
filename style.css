@@ -149,3 +149,58 @@ header h1{
 }
 
 }
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+
+.stat-card {
+
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+
+    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+
+}
+
+
+.stat-card h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+
+.stat-card p {
+
+    margin: 8px 0;
+
+    color: #555;
+
+}
+
+
+.stat-card span {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+}
+
+
+@media(max-width:600px){
+
+.stats{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
