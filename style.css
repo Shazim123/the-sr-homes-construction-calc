@@ -204,3 +204,38 @@ grid-template-columns:1fr 1fr;
 }
 
 }
+.brand-header {
+
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+
+    color: white;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border-radius: 0 0 25px 25px;
+
+}
+
+
+.logo-box h1 {
+
+    font-size: 32px;
+
+    margin: 0;
+
+    font-weight: 700;
+
+}
+
+
+.logo-box p {
+
+    margin-top: 10px;
+
+    font-size: 16px;
+
+    opacity: 0.9;
+
+}
