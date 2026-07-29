@@ -184,3 +184,57 @@ doc.text(
 doc.save("The_SR_Homes_BOQ_Report.pdf");
 
 }
+function saveProject(){
+
+let project = document.getElementById("project").value;
+let client = document.getElementById("client").value;
+let engineer = document.getElementById("engineer").value;
+let date = document.getElementById("date").value;
+
+
+let concrete = Number(document.getElementById("concrete").value);
+let concreteRate = Number(document.getElementById("concreteRate").value);
+
+let steel = Number(document.getElementById("steel").value);
+let steelRate = Number(document.getElementById("steelRate").value);
+
+let brick = Number(document.getElementById("brick").value);
+let brickRate = Number(document.getElementById("brickRate").value);
+
+let plaster = Number(document.getElementById("plaster").value);
+let plasterRate = Number(document.getElementById("plasterRate").value);
+
+let labour = Number(document.getElementById("labour").value);
+
+
+let total =
+(concrete * concreteRate) +
+(steel * steelRate) +
+(brick * brickRate) +
+(plaster * plasterRate) +
+labour;
+
+
+let projects = JSON.parse(localStorage.getItem("projects")) || [];
+
+
+projects.push({
+
+name: project,
+client: client,
+engineer: engineer,
+date: date,
+cost: total.toFixed(2)
+
+});
+
+
+localStorage.setItem(
+"projects",
+JSON.stringify(projects)
+);
+
+
+alert("Project saved successfully!");
+
+}
