@@ -28,7 +28,17 @@ Building Quantity & BOQ Generator
 <section class="card">
 
 <h2>BOQ Calculator</h2>
+<label>Project Name</label>
+<input id="project" type="text" placeholder="Example: Residential Building">
 
+<label>Client Name</label>
+<input id="client" type="text" placeholder="Client Name">
+
+<label>Engineer Name</label>
+<input id="engineer" type="text" placeholder="Engineer Name">
+
+<label>Report Date</label>
+<input id="date" type="date">
 
 <h3>RCC Work</h3>
 
@@ -79,9 +89,11 @@ Building Quantity & BOQ Generator
 
 
 <button onclick="calculateBOQ()">
-
 Generate BOQ
+</button>
 
+<button onclick="downloadBOQPDF()">
+Download BOQ PDF
 </button>
 
 
@@ -90,6 +102,8 @@ Generate BOQ
 
 </section>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
 <script src="boq.js"></script>
 
