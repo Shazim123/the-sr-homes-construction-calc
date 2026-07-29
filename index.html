@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The SR Homes - Construction Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>The SR Homes</h1>
+    <p>Construction Quantity Calculator</p>
+</header>
+
+<section class="card">
+
+<h2>Concrete Quantity Calculator</h2>
+
+<label>Member Type</label>
+<select id="member">
+    <option value="footing">Footing</option>
+    <option value="column">Column</option>
+    <option value="beam">Beam</option>
+    <option value="slab">Slab</option>
+</select>
+
+<label>Length (m)</label>
+<input id="length" type="number">
+
+<label>Width (m)</label>
+<input id="width" type="number">
+
+<label>Depth / Height (m)</label>
+<input id="depth" type="number">
+
+<label>Quantity</label>
+<input id="qty" type="number" value="1">
+
+<button onclick="calculateConcrete()">
+Calculate
+</button>
+
+<div id="result"></div>
+
+</section>
+
+<script src="concrete.js"></script>
+
+</body>
+</html>
