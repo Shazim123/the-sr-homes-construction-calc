@@ -239,3 +239,49 @@ grid-template-columns:1fr 1fr;
     opacity: 0.9;
 
 }
+.menu-grid {
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+}
+
+
+.menu-grid a {
+
+text-decoration:none;
+
+}
+
+
+.menu-grid button {
+
+width:100%;
+
+padding:18px;
+
+font-size:16px;
+
+border-radius:15px;
+
+border:none;
+
+cursor:pointer;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.12);
+
+}
+
+
+@media(max-width:600px){
+
+.menu-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
