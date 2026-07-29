@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clients - The SR Homes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>The SR Homes</h1>
+    <p>Client Management</p>
+</header>
+
+<section class="card">
+
+<h2>Add Client</h2>
+
+<label>Client Name</label>
+<input type="text" id="clientName">
+
+<label>Phone Number</label>
+<input type="tel" id="phone">
+
+<label>Email</label>
+<input type="email" id="email">
+
+<label>Project Name</label>
+<input type="text" id="project">
+
+<label>Project Location</label>
+<input type="text" id="location">
+
+<label>Notes</label>
+<textarea id="notes" style="width:100%;height:100px;"></textarea>
+
+<button onclick="saveClient()">
+Save Client
+</button>
+
+</section>
+
+<section class="card">
+
+<h2>Client List</h2>
+
+<div id="clientList">
+<p>No clients added yet.</p>
+</div>
+
+</section>
+
+<script src="clients.js"></script>
+
+</body>
+</html>
