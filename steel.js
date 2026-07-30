@@ -8,7 +8,7 @@ if(diameter <= 0 || length <= 0 || qty <= 0){
 document.getElementById("result").innerHTML =
 
 `
-<h3>Please enter valid values</h3>
+<h3>Steel Weight Calculation Report</h3>
 `;
 
 return;
