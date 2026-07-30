@@ -509,43 +509,7 @@ box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
 z-index: 1000;
 
 }
-/* Fix button text visibility */
 
-.quick-grid button,
-.tools-grid button {
-
-    color: #222;
-
-}
-
-
-.quick-grid button:hover,
-.tools-grid button:hover {
-
-    background: #1e3c72;
-    color: white;
-
-}
-
-
-/* Bottom navigation text */
-
-.bottom-nav a {
-
-    color: #222;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-
-}
-
-
-.bottom-nav span {
-
-    display: block;
-    font-size: 12px;
-
-}
 /* ===== Button Text Visibility Fix ===== */
 
 .quick-grid button,
@@ -561,8 +525,6 @@ z-index: 1000;
 
     background: #1e3c72;
     color: white;
-
-}
 
 
 /* Bottom Navigation */
@@ -582,4 +544,7 @@ z-index: 1000;
     display: block;
     font-size: 12px;
 
+}
+body {
+    padding-bottom: 80px;
 }
