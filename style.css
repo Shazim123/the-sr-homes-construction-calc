@@ -546,3 +546,40 @@ z-index: 1000;
     font-size: 12px;
 
 }
+/* ===== Button Text Visibility Fix ===== */
+
+.quick-grid button,
+.tools-grid button {
+
+    color: #222;
+
+}
+
+
+.quick-grid button:hover,
+.tools-grid button:hover {
+
+    background: #1e3c72;
+    color: white;
+
+}
+
+
+/* Bottom Navigation */
+
+.bottom-nav a {
+
+    color: #222;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+.bottom-nav span {
+
+    display: block;
+    font-size: 12px;
+
+}
