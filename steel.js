@@ -26,7 +26,7 @@ document.getElementById("result").innerHTML =
 `
 <h3>Steel Calculation Result</h3>
 
-Total Length:
+Total Bar Length:
 <b>${totalLength.toFixed(2)} m</b>
 
 <br><br>
