@@ -396,3 +396,69 @@ grid-template-columns: repeat(2,1fr);
 }
 
 }
+.tools-section {
+    padding: 20px;
+}
+
+.tools-section h2 {
+    text-align: center;
+}
+
+
+.tools-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.tools-grid a {
+
+    text-decoration: none;
+
+}
+
+
+.tools-grid button {
+
+    width: 100%;
+
+    padding: 18px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+}
+
+
+.tools-grid button:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+@media(max-width:700px){
+
+.tools-grid {
+
+grid-template-columns: repeat(1,1fr);
+
+}
+
+}
