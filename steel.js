@@ -3,7 +3,17 @@ function calculateSteel(){
 let diameter = Number(document.getElementById("dia").value);
 let length = Number(document.getElementById("length").value);
 let qty = Number(document.getElementById("qty").value);
+if(diameter <= 0 || length <= 0 || qty <= 0){
 
+document.getElementById("result").innerHTML =
+
+`
+<h3>Please enter valid values</h3>
+`;
+
+return;
+
+}
 // Steel weight formula: D²/162 × Length
 let totalLength = length * qty;
 
