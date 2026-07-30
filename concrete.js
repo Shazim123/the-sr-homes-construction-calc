@@ -34,7 +34,7 @@ let aggregate = volume * 0.84;
 document.getElementById("result").innerHTML =
 
 `
-<h3>Result</h3>
+<h3>Concrete Calculation Report</h3>
 
 Concrete Volume:
 <b>${volume.toFixed(2)} m³</b>
