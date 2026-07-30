@@ -5,6 +5,20 @@ let W = Number(document.getElementById("width").value);
 let D = Number(document.getElementById("depth").value);
 let Q = Number(document.getElementById("qty").value);
 
+
+if(L <= 0 || W <= 0 || D <= 0 || Q <= 0){
+
+document.getElementById("result").innerHTML =
+
+`
+<h3>Please enter valid values</h3>
+`;
+
+return;
+
+}
+
+
 let volume = L * W * D * Q;
 
 
