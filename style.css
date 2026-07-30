@@ -462,3 +462,27 @@ grid-template-columns: repeat(1,1fr);
 }
 
 }
+.tools-section,
+.card {
+
+    background: white;
+
+    margin: 20px;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+}
+
+
+.tools-section h2,
+.card h2 {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+}
