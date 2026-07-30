@@ -31,12 +31,12 @@ Total Bar Length:
 
 <br><br>
 
-Steel Weight:
+Total Steel Weight:
 <b>${weight.toFixed(2)} kg</b>
 
 <br><br>
 
-Steel Quantity:
+Total Steel Quantity:
 <b>${tonnes.toFixed(3)} tonnes</b>
 
 `;
