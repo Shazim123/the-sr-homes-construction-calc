@@ -20,12 +20,23 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
 </head>
+
+
 <body>
 
+
 <header>
+
 <h1>The SR Homes</h1>
-<p>Structural Engineering & Construction Solutions</p>
+
+<p>
+Structural Engineering & Construction Solutions
+</p>
+
 </header>
+
+
+
 <nav>
 
 <a href="index.html">Home</a>
@@ -41,326 +52,565 @@
 </nav>
 
 
+
 <section class="dashboard">
+
+
 <div class="dash-card">
+
 <h2>🏗️</h2>
+
 <p>Projects</p>
+
 </div>
 
+
 <div class="dash-card">
+
 <h2>👥</h2>
+
 <p>Clients</p>
+
 </div>
 
+
 <div class="dash-card">
+
 <h2>📄</h2>
+
 <p>Reports</p>
+
 </div>
+
 
 <div class="dash-card">
+
 <h2>💰</h2>
+
 <p>BOQ</p>
+
 </div>
 
+
 </section>
- <section class="quick-access">
+
+
+
+
+<section class="quick-access">
+
 
 <h2>Quick Access</h2>
 
-<div class="quick-grid">
-
-...
-
-</div>
-
-</section>
-
-
-<section class="tools-section">
-
-<h2>🏗️ Quantity Calculators</h2>
-
-<div class="tools-grid">
-
-<a href="index.html">
-<button>
-🧱 Concrete Calculator
-</button>
-</a>
-
-
-<a href="steel.html">
-<button>
-🔩 Steel Weight Calculator
-</button>
-</a>
-
-
-<a href="cost.html">
-<button>
-💰 Material Cost Estimator
-</button>
-</a>
-
-</div>
-
-</section>
-    <section class="tools-section">
-
-<h2>🔩 RCC Detailing Tools</h2>
-
-<div class="tools-grid">
-
-
-<a href="footing.html">
-<button>
-🏗️ Footing Reinforcement
-</button>
-</a>
-
-
-<a href="column.html">
-<button>
-🏢 Column Reinforcement
-</button>
-</a>
-
-
-<a href="beam.html">
-<button>
-🔲 Beam Reinforcement
-</button>
-</a>
-
-
-<a href="slab.html">
-<button>
-🧱 Slab Reinforcement
-</button>
-</a>
-
-
-<a href="bbs.html">
-<button>
-📋 BBS Generator
-</button>
-</a>
-
-
-</div>
-
-</section>
-<h2>Quick Access</h2>
 
 <div class="quick-grid">
+
 
 <a href="boq.html">
+
 <button>
 📋 BOQ Generator
 </button>
+
 </a>
 
 
 <a href="report.html">
+
 <button>
 📄 Reports
 </button>
+
 </a>
 
 
 <a href="projects.html">
+
 <button>
 📂 Projects
 </button>
+
 </a>
 
 
 <a href="clients.html">
+
 <button>
 👥 Clients
 </button>
+
 </a>
+
 
 </div>
 
+
 </section>
-<a href="index.html">Home</a>
 
-<a href="boq.html">BOQ</a>
 
-<a href="report.html">Reports</a>
 
-<a href="projects.html">Projects</a>
 
-<a href="clients.html">Clients</a>
 
-</nav>
-<section class="card">
+<section class="tools-section">
 
-<h2>Concrete Quantity Calculator</h2>
 
-<label>Member Type</label>
-<select id="member">
-<option value="footing">Footing</option>
-<option value="column">Column</option>
-<option value="beam">Beam</option>
-<option value="slab">Slab</option>
-</select>
+<h2>🏗️ Quantity Calculators</h2>
 
-<label>Length (m)</label>
-<input id="length" type="number">
 
-<label>Width (m)</label>
-<input id="width" type="number">
+<div class="tools-grid">
 
-<label>Depth / Height (m)</label>
-<input id="depth" type="number">
 
-<label>Quantity</label>
-<input id="qty" type="number" value="1">
+<a href="index.html">
 
-<button onclick="calculateConcrete()">
-Calculate
+<button>
+🧱 Concrete Calculator
 </button>
 
-<div id="result"></div>
-
-</section>
+</a>
 
 
-<section class="card">
-
-<h2>Steel Calculator</h2>
-
-<p>Calculate reinforcement steel weight by diameter and length.</p>
 
 <a href="steel.html">
 
 <button>
-
-Open Steel Calculator
-
+🔩 Steel Weight Calculator
 </button>
 
 </a>
+
+
+
+<a href="cost.html">
+
+<button>
+💰 Material Cost Estimator
+</button>
+
+</a>
+
+
+</div>
+
+
 </section>
+
+
+
+
+
+<section class="tools-section">
+
+
+<h2>🔩 RCC Detailing Tools</h2>
+
+
+<div class="tools-grid">
+
+
+<a href="footing.html">
+
+<button>
+🏗️ Footing Reinforcement
+</button>
+
+</a>
+
+
+
+<a href="column.html">
+
+<button>
+🏢 Column Reinforcement
+</button>
+
+</a>
+
+
+
+<a href="beam.html">
+
+<button>
+🔲 Beam Reinforcement
+</button>
+
+</a>
+
+
+
+<a href="slab.html">
+
+<button>
+🧱 Slab Reinforcement
+</button>
+
+</a>
+
+
+
+<a href="bbs.html">
+
+<button>
+📋 BBS Generator
+</button>
+
+</a>
+
+
+</div>
 <section class="card">
+
+
+<h2>Concrete Quantity Calculator</h2>
+
+
+<label>Member Type</label>
+
+<select id="member">
+
+<option value="footing">Footing</option>
+
+<option value="column">Column</option>
+
+<option value="beam">Beam</option>
+
+<option value="slab">Slab</option>
+
+</select>
+
+
+
+<label>Length (m)</label>
+
+<input id="length" type="number">
+
+
+
+<label>Width (m)</label>
+
+<input id="width" type="number">
+
+
+
+<label>Depth / Height (m)</label>
+
+<input id="depth" type="number">
+
+
+
+<label>Quantity</label>
+
+<input id="qty" type="number" value="1">
+
+
+
+<button onclick="calculateConcrete()">
+
+Calculate
+
+</button>
+
+
+<div id="result"></div>
+
+
+</section>
+
+
+
+
+
+<section class="card">
+
+
+<h2>Steel Calculator</h2>
+
+
+<p>
+Calculate reinforcement steel weight by diameter and length.
+</p>
+
+
+<a href="steel.html">
+
+<button>
+Open Steel Calculator
+</button>
+
+</a>
+
+
+</section>
+
+
+
+
+
+<section class="card">
+
 
 <h2>Column Reinforcement Calculator</h2>
 
-<p>Calculate column main steel and stirrup quantity.</p>
+
+<p>
+Calculate column main steel and stirrup quantity.
+</p>
+
 
 <a href="column.html">
+
 <button>
 Open Column Calculator
 </button>
+
 </a>
- </section>
+
+
+</section>
+
+
+
+
+
 <section class="card">
+
 
 <h2>Beam Reinforcement Calculator</h2>
 
-<p>Calculate beam main reinforcement and stirrup steel quantity.</p>
+
+<p>
+Calculate beam main reinforcement and stirrup steel quantity.
+</p>
+
 
 <a href="beam.html">
+
 <button>
 Open Beam Calculator
 </button>
+
 </a>
+
+
+</section>
+
+
+
+
+
 <section class="card">
+
 
 <h2>Slab Reinforcement Calculator</h2>
 
-<p>Calculate slab main and distribution reinforcement steel quantity.</p>
+
+<p>
+Calculate slab main and distribution reinforcement steel quantity.
+</p>
+
 
 <a href="slab.html">
+
 <button>
 Open Slab Calculator
 </button>
+
 </a>
+
+
+</section>
+
+
+
+
+
 <section class="card">
+
 
 <h2>BBS Generator</h2>
 
-<p>Create Bar Bending Schedule and calculate steel weight.</p>
+
+<p>
+Create Bar Bending Schedule and calculate steel weight.
+</p>
+
 
 <a href="bbs.html">
+
 <button>
 Open BBS Generator
 </button>
+
 </a>
 
+
 </section>
+
+
+
+
+
 <section class="card">
+
 
 <h2>Material Cost Estimator</h2>
 
-<p>Calculate cement, steel, sand, aggregate and labour cost.</p>
+
+<p>
+Calculate cement, steel, sand, aggregate and labour cost.
+</p>
+
 
 <a href="cost.html">
+
 <button>
 Open Cost Calculator
 </button>
+
 </a>
 
+
 </section>
+
+
+
 
 
 <section class="card">
 
+
 <h2>Footing Reinforcement Calculator</h2>
 
-<p>Calculate footing reinforcement bars and steel quantity.</p>
+
+<p>
+Calculate footing reinforcement bars and steel quantity.
+</p>
+
 
 <a href="footing.html">
+
 <button>
 Open Footing Calculator
 </button>
+
 </a>
 
+
 </section>
+
+
+
+
+
 <script src="concrete.js"></script>
+
+
+
 <script>
 
 if ("serviceWorker" in navigator) {
 
+
 window.addEventListener("load", function(){
 
+
 navigator.serviceWorker.register("service-worker.js")
+
+
 .then(function(){
+
 
 console.log("Service Worker Registered");
 
-});
 
 });
+
+
+});
+
 
 }
 
+
 </script>
-  <nav class="bottom-nav">
+
+
+
+
+
+<nav class="bottom-nav">
+
 
 <a href="index.html">
+
 🏠
-<span>Home</span>
+
+<span>
+Home
+</span>
+
 </a>
+
+
 
 <a href="#tools">
+
 🏗️
-<span>Tools</span>
+
+<span>
+Tools
+</span>
+
 </a>
+
+
 
 <a href="projects.html">
+
 📂
-<span>Projects</span>
+
+<span>
+Projects
+</span>
+
 </a>
+
+
 
 <a href="clients.html">
+
 👥
-<span>Clients</span>
+
+<span>
+Clients
+</span>
+
 </a>
 
+
+
 </nav>
+
+
+
+<footer>
+
+
+<p>
+
+© The SR Homes
+
+<br>
+
+Construction Engineering Calculator
+
+</p>
+
+
+</footer>
+
+
+
 </body>
-  
+
 </html>
+
