@@ -40,17 +40,17 @@ Concrete Volume Required:
 <b>${volume.toFixed(2)} m³</b>
 <br><br>
 
-Cement:
+Cement Required:
 <b>${cement.toFixed(1)} bags</b>
 
 <br><br>
 
-Sand:
+Sand Required:
 <b>${sand.toFixed(2)} m³</b>
 
 <br><br>
 
-Aggregate:
+Aggregate Required:
 <b>${aggregate.toFixed(2)} m³</b>
 
 `;
