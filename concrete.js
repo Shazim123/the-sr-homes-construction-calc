@@ -36,7 +36,7 @@ document.getElementById("result").innerHTML =
 `
 <h3>Concrete Calculation Report</h3>
 
-Concrete Volume:
+Concrete Volume Required:
 <b>${volume.toFixed(2)} m³</b>
 <br><br>
 
